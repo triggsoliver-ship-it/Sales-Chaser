@@ -21,7 +21,7 @@
 <meta name="twitter:description" content="AI lead qualification for UK businesses. Every opted-in lead called in under a minute — you only pay for the qualified ones.">
 <meta name="twitter:image" content="https://saleschaser.co.uk/og.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Sales Chaser","url":"https://saleschaser.co.uk","description":"AI outbound lead qualification for UK businesses — every opted-in lead called within 60 seconds, qualified to your script — a Ship It Studio company.","email":"info@shipitstudio.co.uk","areaServed":"GB","parentOrganization":{"@type":"Organization","name":"Ship It Studio","url":"https://shipitstudio.co.uk"},"makesOffer":{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI lead qualification &amp; speed-to-call","description":"Pay-per-qualified-lead AI calling for opted-in leads, from £50 per qualified lead."}}}
+{"@context":"https://schema.org","@type":"Organization","name":"Sales Chaser","url":"https://saleschaser.co.uk","description":"AI outbound lead qualification for UK businesses — every opted-in lead called within 60 seconds, qualified to your script — a Ship It Studio company.","email":"info@shipitstudio.co.uk","areaServed":"GB","parentOrganization":{"@type":"Organization","name":"Ship It Studio","url":"https://shipitstudio.co.uk"},"makesOffer":{"@type":"Offer","price":"50","priceCurrency":"GBP","itemOffered":{"@type":"Service","name":"AI lead qualification &amp; speed-to-call","description":"Pay-per-qualified-lead AI calling for opted-in leads, £50 per qualified lead."}}}
 </script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230c0a07'/%3E%3Cpath d='M8 20l6-6 4 4 8-8' fill='none' stroke='%23ffab3d' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M22 10h4v4' fill='none' stroke='%23ffab3d' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -100,6 +100,8 @@ input[type=range]{width:100%;accent-color:var(--accent)}
 .p-card.hot::before{content:"MOST POPULAR";position:absolute;top:-11px;left:24px;background:var(--accent);color:#2a1a05;font-size:.66rem;font-weight:800;letter-spacing:.06em;padding:3px 12px;border-radius:100px}
 .price{font-size:2.3rem;font-weight:800;margin:6px 0 2px}
 .price small{font-size:1rem;color:var(--muted);font-weight:500;font-family:"Instrument Sans"}
+.p-cta{display:grid;gap:10px;margin-top:auto}
+.p-cta .btn{justify-content:center;text-align:center}
 ul.feats{list-style:none;margin:18px 0 26px;flex:1}
 ul.feats li{padding:6px 0;color:var(--muted);font-size:.93rem;display:flex;gap:10px}
 ul.feats li::before{content:"";width:18px;height:18px;flex:none;border-radius:50%;background:rgba(255,171,61,.15) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffab3d' stroke-width='3'%3E%3Cpath d='M5 13l4 4 10-10'/%3E%3C/svg%3E") center/10px no-repeat;margin-top:3px}
@@ -123,6 +125,7 @@ footer .legal{font-size:.78rem;opacity:.7;line-height:1.55;display:block;margin-
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
 <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+<script defer src="/checkout.js"></script>
 </head>
 <body>
 <div class="grain"></div><div class="glow"></div>
@@ -219,11 +222,14 @@ footer .legal{font-size:.78rem;opacity:.7;line-height:1.55;display:block;margin-
 <section class="sec" id="pricing" style="padding-top:0"><div class="wrap">
   <span class="kick reveal">Pricing</span>
   <h2 class="reveal">You pay for outcomes, not activity.</h2>
-  <p class="sec-sub reveal">No per-minute charges, no hourly callers. Simple.</p>
+  <p class="sec-sub reveal">No per-minute charges, no hourly callers. Simple. The price you see is the total you pay.</p>
   <div class="cols">
-    <div class="card p-card reveal"><h3>Pay Per Qualified Lead</h3><div class="price">from £50<small>/qualified lead</small></div>
-      <ul class="feats"><li>We call &amp; qualify all your leads</li><li>You only pay for the ones that qualify</li><li>Hot leads booked to your calendar</li><li>No setup fee to start</li></ul>
-      <a class="btn btn-ghost" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20Pay%20Per%20Lead">Start here</a></div>
+    <div class="card p-card reveal"><h3>Pay Per Qualified Lead</h3><div class="price">£50<small>/qualified lead</small></div>
+      <ul class="feats"><li>We call &amp; qualify all your leads</li><li>You only pay for the ones that qualify</li><li>Hot leads booked to your calendar</li><li>No setup fee to start</li><li>Buy in batches — you choose how many</li></ul>
+      <div class="p-cta">
+        <a class="btn btn-primary" data-checkout="per_lead" data-checkout-label="Buy leads — £50 each" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20Pay%20Per%20Lead">Enquire to buy leads — £50 each</a>
+        <a class="btn btn-ghost" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20Pay%20Per%20Lead">Start here</a>
+      </div></div>
     <div class="card p-card hot reveal"><h3>Managed Campaign</h3><div class="price">Custom<small>/mo</small></div>
       <ul class="feats"><li>Full done-for-you calling programme</li><li>Script writing &amp; optimisation</li><li>Call recordings &amp; qualification reports</li><li>Priority support &amp; monthly review</li></ul>
       <a class="btn btn-primary" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20Managed%20Campaign">Book a demo</a></div>
