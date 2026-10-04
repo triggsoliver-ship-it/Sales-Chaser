@@ -8,7 +8,7 @@ We call your **opted-in** leads within 60 seconds, qualify them to your script, 
 - **Model:** opted-in / warm leads only (UK PECR compliant) — never cold AI dialling
 - **Static site:** `index.html`, `privacy.html` and `checkout.js`, deployed on Vercel
 - **Pricing:** £25/qualified lead, no monthly fee · Managed Campaign custom · High Volume custom (changed from £50 on 4 October 2026 — see PAYMENTS.md)
-- **Contact / CTA:** every call-to-action is `mailto:info@shipitstudio.co.uk`, opened as a real enquiry form by `enquire.js`. The Pay Per Qualified Lead buy button upgrades to Stripe once a £25 Payment Link is pasted into `checkout.js`; it is blank at the moment
+- **Contact / CTA:** the Pay Per Qualified Lead card has a Stripe buy button at £25 per lead; every other call-to-action is `mailto:info@shipitstudio.co.uk`, opened as a real enquiry form by `enquire.js`
 
 ## Checkout
 
@@ -18,10 +18,9 @@ at the top of `checkout.js`. The button ships with its existing `mailto:` href
 and is only upgraded when the configured value is a real Stripe Payment Link, so
 the site still works with no configuration, bad configuration or JavaScript off.
 
-**The link is blank since 4 October 2026.** The old one charged £50, so it was
-removed when the price dropped to £25. Until a new £25 link is pasted in, the
-button opens the enquiry form. Managed Campaign and High Volume are custom
-priced and are not wired. See `PAYMENTS.md`.
+**The link itself did not change on 4 October 2026.** The price behind it was
+changed in Stripe from £50 to £25, so the same URL now charges £25. Managed
+Campaign and High Volume are custom priced and are not wired. See `PAYMENTS.md`.
 
 ## Notes
 
