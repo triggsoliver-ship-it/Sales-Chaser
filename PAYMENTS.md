@@ -4,39 +4,31 @@ Checkout is three things and no more: one config object at the top of
 `checkout.js`, one `data-checkout` attribute on the button in `index.html`, and
 Stripe. No dependencies, no build step, no server, no API key.
 
-## Status — checkout switched off, new link needed
+## Status — live at £25
 
 **The price changed on 4 October 2026: £50 → £25 per qualified lead.** The owner
 chose it after a check of competitor pricing (see "Price check" at the bottom).
 
-The Payment Link in use until then charges £50, so it was removed from
-`checkout.js` in the same commit. A page that says £25 must never hand off to a
-checkout that takes £50. With the key blank the buy button stays the `mailto:`
-it ships as, which `enquire.js` opens as the enquiry form — nothing on the page
-is dead, but nobody can buy by card until a new link exists.
+The Payment Link was edited in the Stripe dashboard the same day: a new £25
+one-off price was added to the product "Sales Chaser — Qualified lead", made the
+default, and swapped onto the existing link with quantity still adjustable
+(0 to 99). The link URL did not change, so `checkout.js` points at the same
+address as before and it now charges £25.
 
-To switch checkout back on:
-
-1. In Stripe, create a new Payment Link: **£25**, GBP, one-off, **quantity
-   adjustable**, no Stripe Tax.
-2. Paste it into `per_lead` in `checkout.js`.
-3. Click it through on the live site and check Stripe's page shows £25 before
-   telling anyone it is live.
-
-The old link, for reference only — do not paste it back, and deactivate it in
-Stripe once nothing depends on it: `https://buy.stripe.com/5kQ4gyaCh3tld9Nb2QeIw0o`
-(£50).
+The old £50 price still exists on the product in Stripe but is not attached to
+any link. Leave it or archive it; never put it back on the link while the page
+says £25.
 
 ## Keys
 
 | Key | Where it appears | Must charge | Payment Link |
 |---|---|---|---|
-| `per_lead` | `index.html` → Pricing → **Pay Per Qualified Lead** card, primary button | **£25 per qualified lead**, GBP, **quantity adjustable at checkout** | not set — see Status above |
+| `per_lead` | `index.html` → Pricing → **Pay Per Qualified Lead** card, primary button | **£25 per qualified lead**, GBP, **quantity adjustable at checkout** | `https://buy.stripe.com/5kQ4gyaCh3tld9Nb2QeIw0o` |
 
-The link must have adjustable quantity switched on in Stripe, so a customer can
-buy several leads in one go. The button therefore says "Buy leads — £25 each"
-rather than anything implying a single purchase. If quantity is ever switched
-off in Stripe, change the label to match.
+The link has adjustable quantity switched on in Stripe, so a customer can buy
+several leads in one go. The button therefore says "Buy leads — £25 each" rather
+than anything implying a single purchase. If quantity is ever switched off in
+Stripe, change the label to match.
 
 Keelson Holdings Ltd is **not VAT registered**. £25 is the whole price of one
 lead — nothing is added at checkout, and no VAT is charged or implied.
