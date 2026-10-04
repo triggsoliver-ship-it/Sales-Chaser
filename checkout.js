@@ -13,7 +13,7 @@
    ========================================================================= */
 
 var PAYMENT_LINKS = {
-  per_lead: "https://buy.stripe.com/5kQ4gyaCh3tld9Nb2QeIw0o" // £50 per qualified lead, quantity adjustable
+  per_lead: "https://buy.stripe.com/5kQ4gyaCh3tld9Nb2QeIw0o" // £25 per qualified lead, quantity adjustable
 };
 
 /* ----------------------------------------------------------------------------
