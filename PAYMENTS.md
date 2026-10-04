@@ -4,18 +4,41 @@ Checkout is three things and no more: one config object at the top of
 `checkout.js`, one `data-checkout` attribute on the button in `index.html`, and
 Stripe. No dependencies, no build step, no server, no API key.
 
+## Status — checkout switched off, new link needed
+
+**The price changed on 4 October 2026: £50 → £25 per qualified lead.** The owner
+chose it after a check of competitor pricing (see "Price check" at the bottom).
+
+The Payment Link in use until then charges £50, so it was removed from
+`checkout.js` in the same commit. A page that says £25 must never hand off to a
+checkout that takes £50. With the key blank the buy button stays the `mailto:`
+it ships as, which `enquire.js` opens as the enquiry form — nothing on the page
+is dead, but nobody can buy by card until a new link exists.
+
+To switch checkout back on:
+
+1. In Stripe, create a new Payment Link: **£25**, GBP, one-off, **quantity
+   adjustable**, no Stripe Tax.
+2. Paste it into `per_lead` in `checkout.js`.
+3. Click it through on the live site and check Stripe's page shows £25 before
+   telling anyone it is live.
+
+The old link, for reference only — do not paste it back, and deactivate it in
+Stripe once nothing depends on it: `https://buy.stripe.com/5kQ4gyaCh3tld9Nb2QeIw0o`
+(£50).
+
 ## Keys
 
 | Key | Where it appears | Must charge | Payment Link |
 |---|---|---|---|
-| `per_lead` | `index.html` → Pricing → **Pay Per Qualified Lead** card, primary button | **£50 per qualified lead**, GBP, **quantity adjustable at checkout** | `https://buy.stripe.com/5kQ4gyaCh3tld9Nb2QeIw0o` |
+| `per_lead` | `index.html` → Pricing → **Pay Per Qualified Lead** card, primary button | **£25 per qualified lead**, GBP, **quantity adjustable at checkout** | not set — see Status above |
 
-The link has adjustable quantity switched on in Stripe, so a customer can buy
-several leads in one go. The button therefore says "Buy leads — £50 each" rather
-than anything implying a single purchase. If quantity is ever switched off in
-Stripe, change the label to match.
+The link must have adjustable quantity switched on in Stripe, so a customer can
+buy several leads in one go. The button therefore says "Buy leads — £25 each"
+rather than anything implying a single purchase. If quantity is ever switched
+off in Stripe, change the label to match.
 
-Keelson Holdings Ltd is **not VAT registered**. £50 is the whole price of one
+Keelson Holdings Ltd is **not VAT registered**. £25 is the whole price of one
 lead — nothing is added at checkout, and no VAT is charged or implied.
 
 **Managed Campaign** and **High Volume** are custom priced and are deliberately
@@ -29,7 +52,7 @@ mistake is obvious before anyone is charged.
 
 | Key | Ships as (mailto) | Reads as once upgraded |
 |---|---|---|
-| `per_lead` | `Enquire to buy leads — £50 each` | `Buy leads — £50 each` |
+| `per_lead` | `Enquire to buy leads — £25 each` | `Buy leads — £25 each` |
 
 ## The fallback contract
 
@@ -78,3 +101,26 @@ inspect `CHECKOUT.links`.
   fix. If one is ever added it must not disable the `payment` permission, and it
   must allow `buy.stripe.com` and `checkout.stripe.com` in `form-action` and
   `connect-src`.
+
+## Price check — 4 October 2026
+
+Published prices found on 4 October 2026. They back the "How that compares"
+table in the pricing section and the move to £25. Prices move; re-check before
+quoting any of them. Only WillPower and Retell were read on the provider's own
+site — the rest come from listings and comparison pages.
+
+| Type | Provider | Published price |
+|---|---|---|
+| Done-for-you AI lead calling (UK) | WillPower LeadGen, Speed to Lead | £1,000 setup + £300 a month + £2 per lead called |
+| Done-for-you AI lead qualification (UK) | HyperLeads | from £450 a month |
+| Dialler software | CloudTalk, JustCall, Aircall | from $19, $29 and $30 per user a month; seat minimums on the last two |
+| Dialler software | PhoneBurner | from $140 per user a month |
+| DIY AI calling platform | Retell AI | roughly $0.07 to $0.15 per minute all in |
+| DIY AI calling platform | Bland AI | $299 to $499 a month plus per-minute charges |
+| AI sales tools | AiSDR | $250 to $2,500 a month |
+| AI sales tools | 11x | from $3,750 a month |
+| Pay-per-lead agencies | typical range | $50 to $300 per lead |
+
+Sales Chaser has no monthly fee, so it is the cheapest of these per month. No
+other provider found sells AI qualification of a client's own leads on a
+pay-per-qualified-lead basis, so there is no like-for-like per-lead price.
