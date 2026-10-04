@@ -13,11 +13,7 @@
    ========================================================================= */
 
 var PAYMENT_LINKS = {
-  // Blank on purpose since 4 October 2026, when the price dropped from £50 to
-  // £25. The old link still charges £50, so it was removed. Create a new
-  // Payment Link at £25 per qualified lead (quantity adjustable) and paste it
-  // here. Until then the button stays the contact link it shipped as.
-  per_lead: ""
+  per_lead: "https://buy.stripe.com/5kQ4gyaCh3tld9Nb2QeIw0o" // £25 per qualified lead, quantity adjustable
 };
 
 /* ----------------------------------------------------------------------------
