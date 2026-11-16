@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sales Chaser — Every lead called in 60 seconds. Your team only talks to the ones ready to buy.</title>
 <meta name="description" content="AI calls your opted-in leads within seconds, qualifies them to your script, and hands your sales team only the ones who said yes. £25 per qualified lead, no monthly fee. UK-built.">
-<meta name="theme-color" content="#0c0a07">
+<meta name="theme-color" content="#14161a">
 <link rel="canonical" href="https://saleschaser.co.uk/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Sales Chaser">
@@ -23,113 +23,146 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Sales Chaser","url":"https://saleschaser.co.uk","description":"AI outbound lead qualification for UK businesses — every opted-in lead called within 60 seconds, qualified to your script — a Ship It Studio company.","email":"info@shipitstudio.co.uk","areaServed":"GB","parentOrganization":{"@type":"Organization","name":"Ship It Studio","url":"https://shipitstudio.co.uk"},"makesOffer":{"@type":"Offer","price":"25","priceCurrency":"GBP","itemOffered":{"@type":"Service","name":"AI lead qualification &amp; speed-to-call","description":"Pay-per-qualified-lead AI calling for opted-in leads, £25 per qualified lead, no monthly fee."}}}
 </script>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230c0a07'/%3E%3Cpath d='M8 20l6-6 4 4 8-8' fill='none' stroke='%23ffab3d' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M22 10h4v4' fill='none' stroke='%23ffab3d' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23ff5a1f'/%3E%3Ccircle cx='16' cy='17' r='9' fill='none' stroke='%2314161a' stroke-width='2.5'/%3E%3Cpath d='M16 17V11M13 5h6' stroke='%2314161a' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0c0a07;--panel:#171310;--panel2:#221b15;--line:#2b2219;--text:#f6efe8;--muted:#a89a8c;--accent:#ffab3d;--accent2:#4ad6a0;--warn:#f5b04e;--bad:#ff6b6b;--r:16px}
+:root{
+  --page:#ffffff;
+  --ink:#14161a;
+  --soft:#5a5f68;
+  --rule:#dfe1e5;
+  --tint:#f2f3f5;
+  --signal:#ff5a1f;   /* starting-flag orange */
+  --amber:#ffb400;    /* timing-board digits */
+  --win:#1f9d55;
+}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:"Instrument Sans",-apple-system,sans-serif;line-height:1.6;overflow-x:hidden}
-h1,h2,h3,.brand,.num,.price{font-family:"Bricolage Grotesque","Instrument Sans",sans-serif}
-.grain{position:fixed;inset:0;pointer-events:none;opacity:.5;z-index:1;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E")}
-.glow{position:fixed;top:-200px;left:50%;transform:translateX(-50%);width:900px;height:500px;background:radial-gradient(ellipse,rgba(255,171,61,.16),transparent 70%);pointer-events:none;z-index:0}
-.wrap{max-width:1120px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
-.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.95rem;padding:13px 24px;border-radius:12px;text-decoration:none;transition:transform .15s,box-shadow .15s;cursor:pointer;border:none}
-.btn:hover{transform:translateY(-1px)}
-.btn-primary{background:var(--accent);color:#2a1a05;box-shadow:0 0 0 1px rgba(255,171,61,.4),0 8px 30px -8px rgba(255,171,61,.55)}
-.btn-ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
-.btn-lg{padding:16px 30px;font-size:1.05rem}
-.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(12,10,7,.75);border-bottom:1px solid var(--line)}
-.nav-in{max-width:1120px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-weight:800;font-size:1.25rem;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:10px}
-.brand em{color:var(--accent);font-style:normal}
-.hero{padding:84px 0 40px}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
-@media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:7px 14px;border-radius:100px;margin-bottom:22px}
-.eyebrow .d{width:7px;height:7px;border-radius:50%;background:var(--accent)}
-h1{font-size:clamp(2.4rem,5.4vw,3.9rem);line-height:1.06;font-weight:800;letter-spacing:-.02em;margin-bottom:22px}
-.hl{color:var(--accent)}
-.lead{color:var(--muted);font-size:1.16rem;max-width:520px;margin-bottom:32px}
-.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
-.cta-note{font-size:.85rem;color:var(--muted)}
-.phone-shell{width:330px;margin:0 auto;background:#1a1510;border:1px solid #322619;border-radius:24px;padding:20px;box-shadow:0 30px 80px -30px rgba(0,0,0,.9)}
-.call-top{display:flex;align-items:center;gap:12px;padding-bottom:16px;border-bottom:1px solid var(--line);margin-bottom:14px}
-.call-av{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#c9781c);display:flex;align-items:center;justify-content:center;font-weight:800;color:#2a1a05;font-family:"Bricolage Grotesque"}
-.call-top b{font-size:.95rem;display:block}.call-top small{color:var(--muted);font-size:.78rem}
-.call-status{margin-left:auto;font-size:.72rem;color:var(--accent2);display:flex;align-items:center;gap:6px}
-.call-status::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent2);box-shadow:0 0 8px var(--accent2);animation:blink 1.2s infinite}
-@keyframes blink{50%{opacity:.3}}
-.transcript{min-height:300px;display:flex;flex-direction:column;gap:10px;max-height:340px;overflow:hidden}
-.line{max-width:88%;padding:9px 13px;border-radius:14px;font-size:.85rem;line-height:1.45;opacity:0;transform:translateY(10px);transition:all .45s}
-.line.show{opacity:1;transform:none}
-.line.ai{align-self:flex-start;background:var(--panel2);border:1px solid #322619;border-bottom-left-radius:4px}
-.line.ai b{color:var(--accent);font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:2px}
-.line.lead{align-self:flex-end;background:linear-gradient(135deg,#2f6d52,#245741);color:#e8fff5;border-bottom-right-radius:4px}
-.line.sys{align-self:center;background:none;color:var(--accent);font-size:.74rem;text-align:center;max-width:100%;font-weight:600}
-.replay{width:100%;margin-top:12px;background:var(--panel2);border:1px solid var(--line);color:var(--muted);border-radius:100px;font-size:.75rem;padding:8px;cursor:pointer;display:none}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:64px 0 0}
-@media(max-width:800px){.stats{grid-template-columns:repeat(2,1fr)}}
-.stat{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px}
-.stat .num{font-size:1.9rem;font-weight:800;color:var(--accent)}
-.stat .lbl{color:var(--muted);font-size:.86rem;margin-top:2px}
-.sec{padding:88px 0}
-.kick{display:block;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
-h2{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:800;letter-spacing:-.01em;margin-bottom:14px}
-.sec-sub{color:var(--muted);max-width:600px;margin-bottom:44px;font-size:1.05rem}
-.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:26px;transition:border-color .2s}
-.card:hover{border-color:#3a2e1f}
-.card .ci{font-size:1.5rem;margin-bottom:12px}
-.card h3{font-size:1.1rem;margin-bottom:6px}
-.card p{color:var(--muted);font-size:.94rem}
-.step-n{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:12px;background:rgba(255,171,61,.12);border:1px solid var(--accent);color:var(--accent);font-weight:800;font-family:"Bricolage Grotesque";margin-bottom:16px}
-.calc{background:linear-gradient(160deg,#1c1509,#0f0c08 60%);border:1px solid #3a2c17;border-radius:20px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
-@media(max-width:800px){.calc{grid-template-columns:1fr}}
-.calc label{display:flex;justify-content:space-between;font-size:.9rem;color:var(--muted);margin:22px 0 8px}
-.calc label b{color:var(--text)}
-input[type=range]{width:100%;accent-color:var(--accent)}
-.calc-out{text-align:center;background:rgba(12,10,7,.5);border:1px solid var(--line);border-radius:var(--r);padding:34px}
-.calc-out .big{font-family:"Bricolage Grotesque";font-size:clamp(2.2rem,4vw,3.2rem);font-weight:800;color:var(--accent2)}
-.calc-out small{color:var(--muted);display:block;margin-top:6px}
-.calc-out .vs{margin-top:18px;padding-top:18px;border-top:1px dashed var(--line);color:var(--accent);font-weight:700}
-.p-card{position:relative;display:flex;flex-direction:column}
-.p-card.hot{border-color:var(--accent);background:linear-gradient(180deg,rgba(255,171,61,.07),transparent 40%),var(--panel)}
-.p-card.hot::before{content:"MOST POPULAR";position:absolute;top:-11px;left:24px;background:var(--accent);color:#2a1a05;font-size:.66rem;font-weight:800;letter-spacing:.06em;padding:3px 12px;border-radius:100px}
-.price{font-size:2.3rem;font-weight:800;margin:6px 0 2px}
-.price small{font-size:1rem;color:var(--muted);font-weight:500;font-family:"Instrument Sans"}
-.p-cta{display:grid;gap:10px;margin-top:auto}
-.p-cta .btn{justify-content:center;text-align:center}
-ul.feats{list-style:none;margin:18px 0 26px;flex:1}
-ul.feats li{padding:6px 0;color:var(--muted);font-size:.93rem;display:flex;gap:10px}
-ul.feats li::before{content:"";width:18px;height:18px;flex:none;border-radius:50%;background:rgba(255,171,61,.15) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffab3d' stroke-width='3'%3E%3Cpath d='M5 13l4 4 10-10'/%3E%3C/svg%3E") center/10px no-repeat;margin-top:3px}
-.cmp{margin-top:34px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:8px 26px 20px;overflow-x:auto}
-.cmp h3{font-size:1.1rem;margin:20px 0 6px}
-.cmp table{width:100%;border-collapse:collapse;min-width:560px}
-.cmp th,.cmp td{text-align:left;padding:12px 16px 12px 0;border-bottom:1px solid var(--line);font-size:.92rem;vertical-align:top}
-.cmp th{color:var(--muted);font-weight:600;font-size:.76rem;letter-spacing:.06em;text-transform:uppercase}
-.cmp td{color:var(--muted)}
-.cmp td:first-child{color:var(--text);font-weight:600}
-.cmp tr.us td{color:var(--accent);font-weight:700;border-bottom:none}
-.cmp .fine{font-size:.78rem;color:var(--muted);opacity:.75;margin-top:12px}
-@media(max-width:640px){.cmp{padding:6px 18px 18px}.cmp table{min-width:0}.cmp thead{display:none}.cmp tr{display:block;padding:12px 0;border-bottom:1px solid var(--line)}.cmp td{display:block;padding:2px 0;border-bottom:none}.cmp tr.us{border-bottom:none}}
-details{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:12px}
-details summary{cursor:pointer;font-weight:600;padding:18px 22px;list-style:none;display:flex;justify-content:space-between;align-items:center}
-details summary::after{content:"+";color:var(--accent);font-size:1.3rem;font-weight:700}
-details[open] summary::after{content:"–"}
-details p{padding:0 22px 18px;color:var(--muted);font-size:.95rem}
-.cta-final{text-align:center;background:linear-gradient(160deg,#1e1609,var(--panel));border:1px solid #3a2c17;border-radius:24px;padding:72px 32px;margin-bottom:88px}
-.cta-final p{color:var(--muted);max-width:520px;margin:0 auto 30px}
-footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:.85rem}
-footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
-footer a{color:var(--accent);text-decoration:none;font-weight:600}
-footer a:hover{text-decoration:underline}
-footer .fine{font-size:.78rem;opacity:.7}
-footer .legal{font-size:.78rem;opacity:.7;line-height:1.55;display:block;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
-.reveal.in{opacity:1;transform:none}
+body{background:var(--page);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;font-size:18px;line-height:1.6}
+a{color:var(--ink)}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+h1,h2,h3,.cond{font-family:"Barlow Condensed","Barlow",sans-serif}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.btn{display:inline-block;font:inherit;font-weight:700;font-size:1rem;padding:15px 24px;border-radius:4px;text-decoration:none;border:2px solid var(--ink);cursor:pointer;line-height:1.2;text-align:center}
+.btn-go{background:var(--signal);border-color:var(--signal);color:var(--ink)}
+.btn-go:hover{background:#e84a12;border-color:#e84a12}
+.btn-line{background:transparent;color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+/* nav */
+.nav{border-bottom:1px solid var(--rule)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px;gap:16px}
+.brand{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.6rem;text-decoration:none;display:flex;align-items:center;gap:10px;letter-spacing:.01em}
+.brand svg{width:28px;height:28px}
+.nav nav{display:flex;gap:24px;align-items:center}
+.nav nav a.txt{text-decoration:none;color:var(--soft);font-weight:500}
+.nav nav a.txt:hover{color:var(--ink)}
+.nav .btn{padding:10px 16px;font-size:.95rem}
+@media(max-width:720px){.nav nav a.txt{display:none}}
+/* hero */
+.hero{padding:60px 0 76px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:52px;align-items:center}
+@media(max-width:960px){.hero .wrap{grid-template-columns:1fr}}
+h1{font-weight:800;font-size:clamp(2.8rem,6.4vw,5rem);line-height:.95;letter-spacing:-.01em;text-transform:none;margin-bottom:22px}
+.lead{font-size:1.18rem;color:var(--soft);max-width:33em;margin-bottom:28px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.cta-note{font-size:.95rem;color:var(--soft);margin-top:16px}
+/* timing board */
+.board{background:var(--ink);color:#fff;border-radius:6px;padding:22px 22px 18px;box-shadow:0 22px 50px -24px rgba(20,22,26,.7)}
+.board-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #2e3239;padding-bottom:12px;margin-bottom:6px}
+.board-head h2{font-size:1.35rem;font-weight:700;color:#fff;margin:0;letter-spacing:.01em}
+.board-head span{font-size:.85rem;color:#9aa1ab}
+.board table{width:100%;border-collapse:collapse}
+.board th{font-weight:500;font-size:.78rem;color:#9aa1ab;text-align:left;padding:8px 6px 6px}
+.board td{padding:11px 6px;border-top:1px solid #23262c;font-size:.95rem;vertical-align:middle}
+.board td.lw b{display:block;font-weight:600}
+.board td.lw small{color:#9aa1ab;font-size:.8rem}
+.t{font-family:"Barlow Condensed",sans-serif;font-variant-numeric:tabular-nums;font-weight:700;font-size:1.55rem;color:var(--amber);letter-spacing:.02em;white-space:nowrap}
+.res{font-size:.85rem;font-weight:600;white-space:nowrap}
+.res.q{color:#5be08f}
+.res.n{color:#9aa1ab}
+.board-foot{display:flex;justify-content:space-between;gap:12px;margin-top:12px;padding-top:12px;border-top:1px solid #2e3239;font-size:.85rem;color:#9aa1ab}
+.board-foot b{color:#fff}
+@media(max-width:520px){.board{padding:18px 14px 14px}.board td{padding:10px 4px}.board td.lw small{display:none}.res{white-space:normal;font-size:.8rem}.t{font-size:1.25rem}}
+/* sections */
+section{padding:84px 0}
+.tint{background:var(--tint)}
+h2{font-weight:800;font-size:clamp(2rem,4vw,3.1rem);line-height:1;letter-spacing:-.005em;margin-bottom:16px;max-width:18em}
+.sub{color:var(--soft);max-width:36em;margin-bottom:40px;font-size:1.08rem}
+/* problem: a stopwatch strip */
+.clock{display:grid;grid-template-columns:repeat(4,1fr);border-top:4px solid var(--ink)}
+@media(max-width:820px){.clock{grid-template-columns:1fr 1fr}}
+.clock div{padding:18px 18px 0 0}
+.clock b{font-family:"Barlow Condensed";font-size:2.4rem;font-weight:800;line-height:1;display:block;font-variant-numeric:tabular-nums}
+.clock div:nth-child(1) b{color:var(--win)}
+.clock div:nth-child(4) b{color:var(--signal)}
+.clock p{color:var(--soft);font-size:.98rem;margin-top:6px}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:56px}
+@media(max-width:820px){.three{grid-template-columns:1fr}}
+.three h3{font-size:1.5rem;font-weight:700;margin-bottom:6px;line-height:1.1}
+.three p{color:var(--soft)}
+/* steps */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s}
+@media(max-width:820px){.steps{grid-template-columns:1fr}}
+.steps li{counter-increment:s;padding:0 28px 0 0;position:relative}
+.steps li::before{content:counter(s);font-family:"Barlow Condensed";font-weight:800;font-size:3.4rem;line-height:1;color:var(--signal);display:block;margin-bottom:8px}
+.steps h3{font-size:1.45rem;font-weight:700;line-height:1.1;margin-bottom:8px}
+.steps p{color:var(--soft)}
+@media(max-width:820px){.steps li{padding:0 0 30px}}
+/* calculator */
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+@media(max-width:820px){.calc{grid-template-columns:1fr}}
+.calc label{display:flex;justify-content:space-between;font-weight:600;margin:24px 0 8px}
+.calc label:first-child{margin-top:0}
+input[type=range]{width:100%;accent-color:var(--signal);height:28px}
+.out{background:var(--ink);color:#fff;border-radius:6px;padding:32px}
+.out .big{font-family:"Barlow Condensed";font-weight:800;font-size:clamp(3rem,7vw,4.6rem);line-height:1;color:var(--amber);font-variant-numeric:tabular-nums}
+.out p{color:#c3c8cf;margin-top:8px}
+.out .vs{color:#fff;font-weight:700;margin-top:16px;padding-top:16px;border-top:1px solid #2e3239}
+/* who */
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
+@media(max-width:820px){.who{grid-template-columns:1fr}}
+.who div{border-left:4px solid var(--signal);padding-left:18px}
+.who h3{font-size:1.45rem;font-weight:700;margin-bottom:4px;line-height:1.1}
+.who p{color:var(--soft)}
+/* pricing */
+.plans{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:20px;align-items:stretch}
+@media(max-width:900px){.plans{grid-template-columns:1fr}}
+.plan{border:2px solid var(--rule);border-radius:6px;padding:28px;display:flex;flex-direction:column;background:#fff}
+.plan.main{border-color:var(--ink);border-width:3px}
+.plan h3{font-size:1.5rem;font-weight:700;line-height:1.1}
+.price{font-family:"Barlow Condensed";font-weight:800;font-size:3.6rem;line-height:1;margin:14px 0 2px}
+.price small{font-family:"Barlow";font-size:1rem;font-weight:500;color:var(--soft)}
+.plan ul{list-style:none;margin:16px 0 26px;flex:1}
+.plan li{padding:6px 0 6px 24px;position:relative;font-size:.98rem}
+.plan li::before{content:"";position:absolute;left:0;top:15px;width:12px;height:3px;background:var(--signal)}
+.plan .ctas{display:grid;gap:10px}
+.cmp{margin-top:52px;overflow-x:auto}
+.cmp h3{font-size:1.5rem;font-weight:700;margin-bottom:10px}
+.cmp table{width:100%;border-collapse:collapse;min-width:620px}
+.cmp th,.cmp td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--rule);font-size:.97rem;vertical-align:top}
+.cmp th{font-weight:600;font-size:.9rem;color:var(--soft);border-bottom:2px solid var(--ink)}
+.cmp tr.us td{background:var(--signal);font-weight:700}
+.fine{font-size:.85rem;color:var(--soft);margin-top:10px}
+@media(max-width:640px){.cmp table{min-width:0}.cmp thead{display:none}.cmp tr{display:block;border-bottom:1px solid var(--rule)}.cmp td{display:block;border-bottom:0;padding:4px 14px}.cmp td:first-child{padding-top:12px;font-weight:700}.cmp td:last-child{padding-bottom:12px}}
+/* faq */
+.faq{max-width:800px}
+details{border-bottom:1px solid var(--rule)}
+summary{cursor:pointer;font-weight:600;padding:18px 0;list-style:none;display:flex;justify-content:space-between;gap:16px;font-size:1.08rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:"Barlow Condensed";font-weight:800;font-size:1.6rem;line-height:1;color:var(--signal)}
+details[open] summary::after{content:"−"}
+details p{padding:0 0 18px;color:var(--soft)}
+/* close */
+.close{background:var(--signal)}
+.close .wrap{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}
+@media(max-width:820px){.close .wrap{grid-template-columns:1fr}}
+.close p{max-width:34em}
+.close .btn{background:var(--ink);color:#fff}
+.close .btn:hover{background:#000}
+footer{padding:32px 0 44px;font-size:.9rem;color:var(--soft)}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 20px;margin-bottom:12px}
 </style>
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
@@ -138,123 +171,122 @@ footer .legal{font-size:.78rem;opacity:.7;line-height:1.55;display:block;margin-
 <script defer src="/checkout.js"></script>
 </head>
 <body>
-<div class="grain"></div><div class="glow"></div>
 
-<header class="nav"><div class="nav-in">
-  <a class="brand" href="/">Sales<em>Chaser</em></a>
-  <a class="btn btn-primary" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20book%20a%20demo">Book a demo</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="4" fill="#ff5a1f"/><circle cx="16" cy="17" r="9" fill="none" stroke="#14161a" stroke-width="2.5"/><path d="M16 17V11M13 5h6" stroke="#14161a" stroke-width="2.5" stroke-linecap="round"/></svg>Sales Chaser</a>
+  <nav>
+    <a class="txt" href="#how">How it works</a>
+    <a class="txt" href="#pricing">Pricing</a>
+    <a class="btn btn-line" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20book%20a%20demo">Book a demo</a>
+  </nav>
 </div></header>
 
 <section class="hero"><div class="wrap">
-  <div class="hero-grid">
-    <div>
-      <span class="eyebrow reveal"><span class="d"></span>AI lead qualification · UK-built</span>
-      <h1 class="reveal">Every lead called in <span class="hl">60 seconds.</span> Your team only speaks to the ones ready to buy.</h1>
-      <p class="lead reveal">You give us your opted-in leads and your script. Our AI rings every one within seconds, qualifies them to your criteria, and books the hot ones straight onto your sales team's calendar. You stop paying people to dial dead numbers.</p>
-      <div class="hero-cta reveal">
-        <a class="btn btn-primary btn-lg" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20book%20a%20demo">Hear it qualify a lead</a>
-        <span class="cta-note">£25 per qualified lead. No monthly fee, no setup fee.</span>
-      </div>
+  <div>
+    <h1>Every lead called inside 60 seconds. Your team only talks to the ones ready to buy.</h1>
+    <p class="lead">Send us your opted-in leads and your script. Our AI rings every one within seconds, asks your questions and books the interested ones straight into your sales team's calendar. Nobody on your payroll dials a dead number again.</p>
+    <div class="hero-cta">
+      <a class="btn btn-go" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20book%20a%20demo">Hear it qualify a lead</a>
+      <a class="btn btn-line" href="#pricing">See pricing</a>
     </div>
-    <div class="reveal">
-      <div class="phone-shell">
-        <div class="call-top">
-          <div class="call-av">SC</div>
-          <div><b>Sales Chaser AI</b><small>calling · Bright Spark Solar</small></div>
-          <div class="call-status">live</div>
-        </div>
-        <div class="transcript" id="tr"></div>
-        <button class="replay" id="replay">↻ replay the call</button>
-      </div>
-    </div>
+    <p class="cta-note">£25 per qualified lead. No monthly fee, no setup fee.</p>
   </div>
-  <div class="stats">
-    <div class="stat reveal"><div class="num">&lt;60 sec</div><div class="lbl">every lead called — before they've gone cold*</div></div>
-    <div class="stat reveal"><div class="num">100%</div><div class="lbl">of leads called, every time — no lead left sitting</div></div>
-    <div class="stat reveal"><div class="num">24/7</div><div class="lbl">evenings and weekends, when leads actually answer</div></div>
-    <div class="stat reveal"><div class="num">Pay per</div><div class="lbl">qualified lead — not per dial, not per hour</div></div>
+
+  <div class="board" aria-label="Example: four solar enquiries from one evening, each called within a minute, two qualified and booked.">
+    <div class="board-head"><h2>Tuesday evening's leads</h2><span>Example: a solar installer</span></div>
+    <table>
+      <thead><tr><th>Lead</th><th>Called after</th><th class="hide">Outcome</th></tr></thead>
+      <tbody>
+        <tr><td class="lw"><b>Mark, Basingstoke</b><small>Enquired 18:02, own home</small></td><td class="t" id="first">0:38</td><td class="res q hide">Qualified, booked Weds 18:00</td></tr>
+        <tr><td class="lw"><b>Priya, Andover</b><small>Enquired 19:41</small></td><td class="t">0:44</td><td class="res n hide">Renting, not eligible</td></tr>
+        <tr><td class="lw"><b>Dave, Romsey</b><small>Enquired 20:15, own home</small></td><td class="t">0:29</td><td class="res q hide">Qualified, booked Thurs 12:30</td></tr>
+        <tr><td class="lw"><b>Sam, Newbury</b><small>Enquired 21:58</small></td><td class="t">0:51</td><td class="res n hide">No answer, retry 09:00</td></tr>
+      </tbody>
+    </table>
+    <div class="board-foot"><span>Your team's evening calls: <b>0</b></span><span>Billed tonight: <b>2 × £25</b></span></div>
   </div>
 </div></section>
 
-<section class="sec"><div class="wrap">
-  <span class="kick reveal">The problem</span>
-  <h2 class="reveal">A lead that waits 5 minutes is already going cold.</h2>
-  <p class="sec-sub reveal">You pay good money for leads, then they sit in an inbox. By the time someone calls, the customer's enquired with three competitors — and the fastest to call usually wins.</p>
-  <div class="cols">
-    <div class="card reveal"><div class="ci">⏳</div><h3>Leads go stale</h3><p>Enquiries come in at 8pm and Saturdays. By Monday the buyer's moved on or booked elsewhere.</p></div>
-    <div class="card reveal"><div class="ci">📞</div><h3>Reps waste hours dialling</h3><p>Most calls are voicemail, wrong numbers or "just looking." Your closers spend the day chasing, not closing.</p></div>
-    <div class="card reveal"><div class="ci">💸</div><h3>You pay either way</h3><p>Whether a lead converts or not, you've paid for it and paid someone to chase it. The maths only works if you're fast.</p></div>
+<section class="tint"><div class="wrap">
+  <h2>A lead that waits five minutes is already going cold</h2>
+  <p class="sub">You pay good money for leads, then they sit in an inbox. By the time someone calls, the customer has asked three other firms, and the fastest one usually wins.</p>
+  <div class="clock">
+    <div><b>0:38</b><p>Sales Chaser rings, while they still have your website open</p></div>
+    <div><b>5:00</b><p>Most enquiries are going cold by now*</p></div>
+    <div><b>18:00</b><p>Leads arrive in the evening and at weekends, when your team has gone home</p></div>
+    <div><b>Monday</b><p>When someone finally calls back, and they've booked elsewhere</p></div>
+  </div>
+  <div class="three">
+    <div><h3>Leads go stale</h3><p>Enquiries come in at 8pm and on Saturdays. By Monday the buyer has moved on.</p></div>
+    <div><h3>Reps spend hours dialling</h3><p>Most calls are voicemail, wrong numbers or "just looking". Your closers spend the day chasing, not closing.</p></div>
+    <div><h3>You pay either way</h3><p>Whether a lead turns into a sale or not, you've paid for it and paid someone to chase it. The maths only works if you are fast.</p></div>
   </div>
 </div></section>
 
-<section class="sec" style="padding-top:0"><div class="wrap">
-  <span class="kick reveal">How it works</span>
-  <h2 class="reveal">Your leads. Your script. Our AI does the chasing.</h2>
-  <p class="sec-sub reveal">Live in days. It works your leads exactly how your best rep would — just instantly, and never tired.</p>
-  <div class="cols">
-    <div class="card reveal"><span class="step-n">1</span><h3>You send opted-in leads</h3><p>Your leads have already opted in, so it's a warm, expected call — the AI can even tell them exactly where they enquired. You give us the script and what "qualified" means to you.</p></div>
-    <div class="card reveal"><span class="step-n">2</span><h3>The AI calls in seconds</h3><p>Every new lead is rung within a minute, day or night. It follows your script, answers questions, and qualifies against your criteria — budget, timing, fit.</p></div>
-    <div class="card reveal"><span class="step-n">3</span><h3>Hot leads go to your team</h3><p>When someone's genuinely interested, the AI books them straight onto your senior team's calendar to talk it through. You only ever speak to ready buyers.</p></div>
-  </div>
+<section id="how"><div class="wrap">
+  <h2>Your leads. Your script. Our AI does the chasing.</h2>
+  <p class="sub">Live in days. It works your leads the way your best rep would, only instantly and at any hour.</p>
+  <ol class="steps">
+    <li><h3>You send opted-in leads</h3><p>Your leads have already asked to hear from you, so it's an expected call, and the AI can tell them where they enquired. You give us the script and what a good lead looks like to you.</p></li>
+    <li><h3>The AI calls in seconds</h3><p>Every new lead is rung within a minute, day or night. It follows your script, answers questions and checks budget, timing and fit.</p></li>
+    <li><h3>Interested buyers go to your team</h3><p>When someone wants to go ahead, the AI books them into your senior team's calendar. Your people only speak to buyers who are ready.</p></li>
+  </ol>
 </div></section>
 
-<section class="sec" style="padding-top:0"><div class="wrap">
-  <span class="kick reveal">The maths</span>
-  <h2 class="reveal">What are cold leads costing you?</h2>
-  <p class="sec-sub reveal">Drag the sliders for your own numbers.</p>
-  <div class="calc reveal">
+<section class="tint"><div class="wrap">
+  <h2>What cold leads are costing you</h2>
+  <p class="sub">Move the sliders to match your numbers.</p>
+  <div class="calc">
     <div>
-      <label>New leads per month <b id="v1">300</b></label>
+      <label for="r1">New leads a month <b id="v1">300</b></label>
       <input type="range" id="r1" min="50" max="2000" step="10" value="300">
-      <label>Average sale value <b id="v2">£1,500</b></label>
+      <label for="r2">Average sale value <b id="v2">£1,500</b></label>
       <input type="range" id="r2" min="200" max="10000" step="100" value="1500">
-      <label>Extra leads reached fast &amp; qualified <b id="v3">15%</b></label>
+      <label for="r3">Extra leads reached in time and qualified <b id="v3">15%</b></label>
       <input type="range" id="r3" min="5" max="40" step="1" value="15">
     </div>
-    <div class="calc-out">
+    <div class="out" aria-live="polite">
       <div class="big" id="lost">£67,500</div>
-      <small>extra pipeline a month from leads that don't go cold</small>
-      <div class="vs" id="vs">You only pay for the qualified ones — £25 each</div>
+      <p>extra pipeline a month from leads that don't go cold</p>
+      <div class="vs" id="vs">You only pay for the qualified ones: £25 each</div>
     </div>
   </div>
 </div></section>
 
-<section class="sec" style="padding-top:0"><div class="wrap">
-  <span class="kick reveal">Who it's for</span>
-  <h2 class="reveal">Anyone who buys leads and lives on speed-to-call.</h2>
-  <div class="cols" style="margin-top:20px">
-    <div class="card reveal"><div class="ci">🏠</div><h3>Home improvement</h3><p>Solar, windows, roofing, kitchens, driveways — high-ticket, high-competition, speed wins.</p></div>
-    <div class="card reveal"><div class="ci">🏦</div><h3>Mortgage &amp; finance brokers</h3><p>Enquiries that need calling and qualifying before they go to a competitor.</p></div>
-    <div class="card reveal"><div class="ci">⚖️</div><h3>Solicitors &amp; claims</h3><p>Personal injury, conveyancing, wills — qualify and book consultations automatically.</p></div>
+<section><div class="wrap">
+  <h2>For anyone who buys leads and lives on speed</h2>
+  <div class="who" style="margin-top:28px">
+    <div><h3>Home improvement</h3><p>Solar, windows, roofing, kitchens and driveways. High-value jobs where the first firm to call usually wins.</p></div>
+    <div><h3>Mortgage and finance brokers</h3><p>Enquiries that need calling and checking before they go to someone else.</p></div>
+    <div><h3>Solicitors and claims</h3><p>Personal injury, conveyancing and wills. Check the basics and book consultations automatically.</p></div>
   </div>
 </div></section>
 
-<section class="sec" id="pricing" style="padding-top:0"><div class="wrap">
-  <span class="kick reveal">Pricing</span>
-  <h2 class="reveal">You pay for outcomes, not activity.</h2>
-  <p class="sec-sub reveal">Pay Per Qualified Lead has no monthly fee, no setup fee and no per-minute charges. You pay £25 for each lead we qualify, and that is the total.</p>
-  <div class="cols">
-    <div class="card p-card reveal"><h3>Pay Per Qualified Lead</h3><div class="price">£25<small>/qualified lead</small></div>
-      <ul class="feats"><li>We call &amp; qualify all your leads</li><li>You only pay for the ones that qualify</li><li>Hot leads booked to your calendar</li><li>No monthly fee, no setup fee</li><li>Buy in batches — you choose how many</li></ul>
-      <div class="p-cta">
-        <a class="btn btn-primary" data-checkout="per_lead" data-checkout-label="Buy leads — £25 each" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20Pay%20Per%20Lead">Enquire to buy leads — £25 each</a>
-        <a class="btn btn-ghost" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20Pay%20Per%20Lead">Start here</a>
+<section class="tint" id="pricing"><div class="wrap">
+  <h2>You pay for results, not activity</h2>
+  <p class="sub">Pay Per Qualified Lead has no monthly fee, no setup fee and no per-minute charges. You pay £25 for each lead we qualify, and that is the total.</p>
+  <div class="plans">
+    <div class="plan main"><h3>Pay Per Qualified Lead</h3><div class="price">£25<small> per qualified lead</small></div>
+      <ul><li>We call and qualify all your leads</li><li>You only pay for the ones that qualify</li><li>Interested buyers booked into your calendar</li><li>No monthly fee, no setup fee</li><li>Buy in batches, as many as you choose</li></ul>
+      <div class="ctas">
+        <a class="btn btn-go" data-checkout="per_lead" data-checkout-label="Buy leads at £25 each" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20Pay%20Per%20Lead">Ask about buying leads at £25 each</a>
+        <a class="btn btn-line" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20Pay%20Per%20Lead">Start here</a>
       </div></div>
-    <div class="card p-card hot reveal"><h3>Managed Campaign</h3><div class="price">Custom<small>/mo</small></div>
-      <ul class="feats"><li>Full done-for-you calling programme</li><li>Script writing &amp; optimisation</li><li>Call recordings &amp; qualification reports</li><li>Priority support &amp; monthly review</li></ul>
-      <a class="btn btn-primary" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20Managed%20Campaign">Book a demo</a></div>
-    <div class="card p-card reveal"><h3>High Volume</h3><div class="price">Custom</div>
-      <ul class="feats"><li>Thousands of leads/month</li><li>Multiple scripts &amp; campaigns</li><li>CRM integration</li><li>Dedicated account team</li></ul>
-      <a class="btn btn-ghost" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20High%20Volume">Talk to us</a></div>
+    <div class="plan"><h3>Managed Campaign</h3><div class="price">Custom</div>
+      <ul><li>A calling programme run for you</li><li>Script writing and improvement</li><li>Call recordings and qualification reports</li><li>Priority support and a monthly review</li></ul>
+      <a class="btn btn-line" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20Managed%20Campaign">Book a demo</a></div>
+    <div class="plan"><h3>High Volume</h3><div class="price">Custom</div>
+      <ul><li>Thousands of leads a month</li><li>Several scripts and campaigns</li><li>Connects to your CRM</li><li>A dedicated account team</li></ul>
+      <a class="btn btn-line" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20High%20Volume">Talk to us</a></div>
   </div>
-  <div class="cmp reveal">
+  <div class="cmp">
     <h3>How that compares</h3>
     <table>
       <thead><tr><th>Option</th><th>What you pay</th><th>What that means</th></tr></thead>
       <tbody>
         <tr><td>Someone on your team rings every lead</td><td>A wage, every month</td><td>Office hours only. Evening and weekend leads wait.</td></tr>
         <tr><td>Dialler software</td><td>A fee per user, every month</td><td>It dials faster. You still pay a person to make every call.</td></tr>
-        <tr><td>DIY AI calling platforms</td><td>Platform fees or per-minute charges</td><td>You build and run it yourself, and pay whether a lead qualifies or not.</td></tr>
+        <tr><td>Do-it-yourself AI calling platforms</td><td>Platform fees or per-minute charges</td><td>You build and run it yourself, and pay whether a lead qualifies or not.</td></tr>
         <tr><td>Done-for-you AI calling</td><td>A monthly fee, often with a setup fee or per-lead charge on top</td><td>You pay every month, whatever the result.</td></tr>
         <tr class="us"><td>Sales Chaser</td><td>£0 a month. £25 per qualified lead.</td><td>You only pay when a lead qualifies.</td></tr>
       </tbody>
@@ -263,67 +295,45 @@ footer .legal{font-size:.78rem;opacity:.7;line-height:1.55;display:block;margin-
   </div>
 </div></section>
 
-<section class="sec" style="padding-top:0"><div class="wrap">
-  <span class="kick reveal">Questions</span>
-  <h2 class="reveal" style="margin-bottom:34px">The things everyone asks.</h2>
-  <details class="reveal"><summary>Are these cold calls?</summary><p>No. We only call leads that have already opted in — people who enquired and expect to hear from you. The AI can even confirm where they enquired at the start of the call. It's warm follow-up, done fast and consistently, and kept compliant with UK marketing rules.</p></details>
-  <details class="reveal"><summary>Does it sound like a robot?</summary><p>It sounds natural and conversational, follows your script, and handles questions. If a lead wants a human, it books them straight onto your team's calendar rather than forcing the conversation.</p></details>
-  <details class="reveal"><summary>What counts as a "qualified" lead?</summary><p>You define it — budget, timeframe, location, product fit, whatever matters to you. We only bill for leads that meet your criteria and agree to a call with your team.</p></details>
-  <details class="reveal"><summary>How fast can we start?</summary><p>Days. We build your calling agent from your script and qualification rules, you test it, then point your lead feed at us.</p></details>
-  <details class="reveal"><summary>Does it work with our CRM?</summary><p>Yes — qualified leads and call notes drop straight into your CRM or calendar in real time, so your team just turns up to booked calls.</p></details>
+<section><div class="wrap">
+  <h2 style="margin-bottom:24px">Questions buyers ask</h2>
+  <div class="faq">
+    <details><summary>Are these cold calls?</summary><p>No. We only call leads that have already opted in: people who enquired and expect to hear from you. The AI can confirm where they enquired at the start of the call. It's prompt follow-up, done the same way every time and kept within UK marketing rules.</p></details>
+    <details><summary>Does it sound like a robot?</summary><p>It sounds natural, follows your script and handles questions. If a lead wants a person, it books them into your team's calendar instead of pushing on.</p></details>
+    <details><summary>What counts as a qualified lead?</summary><p>You decide: budget, timeframe, location, product fit, whatever matters to you. We only bill for leads that meet your criteria and agree to a call with your team.</p></details>
+    <details><summary>How fast can we start?</summary><p>Within days. We build your calling agent from your script and rules, you test it, then point your lead feed at us.</p></details>
+    <details><summary>Does it work with our CRM?</summary><p>Yes. Qualified leads and call notes go straight into your CRM or calendar as they happen, so your team just turns up to booked calls.</p></details>
+  </div>
 </div></section>
 
-<div class="wrap"><div class="cta-final reveal">
-  <span class="kick">Free demo</span>
-  <h2>Hear it qualify a lead in <span class="hl">your</span> industry.</h2>
-  <p>We'll build a demo agent on your script and let you listen to it work a lead end to end. Then we point it at a batch of your real leads and you see the qualified ones land.</p>
-  <a class="btn btn-primary btn-lg" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20book%20a%20demo">Book my demo</a>
-</div></div>
+<section class="close"><div class="wrap">
+  <div>
+    <h2>Hear it qualify a lead in your industry</h2>
+    <p>We build a demo agent on your script and you listen to it work a lead from start to finish. Then we run a batch of your real leads and you see the qualified ones arrive.</p>
+  </div>
+  <div><a class="btn" href="mailto:info@shipitstudio.co.uk?subject=Sales%20Chaser%20—%20book%20a%20demo">Book my demo</a></div>
+</div></section>
 
 <footer><div class="wrap">
-  <span>Sales<em style="color:var(--accent);font-style:normal">Chaser</em> · <a href="https://shipitstudio.co.uk" target="_blank" rel="noopener">a Ship It Studio company</a> · <a href="/privacy.html">Privacy</a></span>
-  <span class="fine">UK-built · opted-in leads only · *industry estimates, sources on request</span>
-  <span class="legal">Sales Chaser is a trading name of Keelson Holdings Ltd, registered in England and Wales, company number 17359226. Registered office: 71-75 Shelton Street, Covent Garden, London WC2H 9JQ.</span>
+  <div class="links"><a href="https://shipitstudio.co.uk" target="_blank" rel="noopener">A Ship It Studio company</a><a href="/privacy.html">Privacy</a></div>
+  <p>UK-built. Opted-in leads only. *Industry estimates; sources on request. The board above is an illustration, not real customer data.</p>
+  <p>Sales Chaser is a trading name of Keelson Holdings Ltd, registered in England and Wales, company number 17359226. Registered office: 71-75 Shelton Street, Covent Garden, London WC2H 9JQ.</p>
 </div></footer>
 
 <script>
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-const lines=[
- ["sys","📞 Lead opted in 40 seconds ago — calling now",1100],
- ["ai","Hi, is that Mark? It's Sarah calling from Bright Spark Solar — you just enquired on our site about solar panels. Is now an okay time?","AI · Sales Chaser",2100],
- ["lead","Oh yeah, hi — that was quick! Yeah go on.",1500],
- ["ai","Brilliant. Quick one so I point you to the right person — is it your own home, and roughly what's prompting the interest, bills or going green?","AI · Sales Chaser",2200],
- ["lead","Own home, yeah. Bills mostly, they're mad at the minute.",1500],
- ["ai","Totally get it. And ideally, are you looking to sort this in the next few months or just researching for now?","AI · Sales Chaser",2000],
- ["lead","No, pretty soon — next month or two ideally.",1400],
- ["ai","Perfect, you're exactly who our team can help. I'll get one of our senior solar advisors to call you to talk options and pricing — does tomorrow at 6pm work?","AI · Sales Chaser",2300],
- ["lead","6pm's great, thanks!",1200],
- ["sys","✅ Qualified: homeowner · bills · buying &lt;2mo · booked tomorrow 6pm → sent to sales team",1400]
-];
-const tr=document.getElementById('tr'),rp=document.getElementById('replay');
-let started=false;
-function play(){tr.innerHTML='';rp.style.display='none';let t=500;
- lines.forEach((l,i)=>{
-  setTimeout(()=>{
-   const d=document.createElement('div');d.className='line '+l[0];
-   d.innerHTML=(l[0]==='ai'?'<b>'+l[2]+'</b>':'')+l[1];
-   tr.appendChild(d);
-   requestAnimationFrame(()=>requestAnimationFrame(()=>d.classList.add('show')));
-   while(tr.children.length>6)tr.removeChild(tr.firstChild);
-   if(i===lines.length-1)rp.style.display='block';
-  },t);t+=l[l.length-1];
- });}
-new IntersectionObserver(es=>{if(es[0].isIntersecting&&!started){started=true;setTimeout(play,500);}},{threshold:.4}).observe(document.getElementById('tr'));
-rp.addEventListener('click',play);
 const r1=document.getElementById('r1'),r2=document.getElementById('r2'),r3=document.getElementById('r3');
 function calc(){const n=+r1.value,v=+r2.value,u=+r3.value/100;
  document.getElementById('v1').textContent=n;
- document.getElementById('v2').textContent='£'+v.toLocaleString();
+ document.getElementById('v2').textContent='£'+v.toLocaleString('en-GB');
  document.getElementById('v3').textContent=Math.round(u*100)+'%';
  const extra=Math.round(n*u*v);
- document.getElementById('lost').textContent='£'+extra.toLocaleString();}
+ document.getElementById('lost').textContent='£'+extra.toLocaleString('en-GB');}
 [r1,r2,r3].forEach(r=>r.addEventListener('input',calc));calc();
+/* one moment of motion: the first lead's timer runs up to 0:38 */
+(function(){var el=document.getElementById('first');
+ if(!el||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ var s=0;el.textContent='0:00';
+ var id=setInterval(function(){s++;el.textContent='0:'+(s<10?'0':'')+s;if(s>=38)clearInterval(id);},45);})();
 </script>
 <script src="/enquire.js" data-key="8ca05808-7f31-464b-9710-6ac18a9393d3" data-subject="New enquiry from Sales Chaser" data-phone="true" defer></script>
 </body>
