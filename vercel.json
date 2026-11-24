@@ -1,0 +1,44 @@
+{
+  "redirects": [
+    {
+      "source": "/speed-to-lead-calling",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/speed-to-lead-calling.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/lead-qualification-for-solar-installers",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/lead-qualification-for-solar-installers.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/lead-follow-up-for-home-improvement",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/lead-follow-up-for-home-improvement.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/lead-follow-up-for-mortgage-brokers",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/lead-follow-up-for-mortgage-brokers.html",
+      "destination": "/",
+      "permanent": false
+    }
+  ]
+}
