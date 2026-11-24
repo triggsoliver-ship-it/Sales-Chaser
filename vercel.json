@@ -1,0 +1,15 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://shipitstudio.co.uk/sales-chaser",
+      "permanent": false
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://shipitstudio.co.uk/sales-chaser/:path*",
+      "permanent": false
+    }
+  ]
+}
